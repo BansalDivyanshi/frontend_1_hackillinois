@@ -1,0 +1,118 @@
+/* styles/Chatbot.module.css */
+/* styles/Chatbot.module.css */
+/* styles/Chatbot.module.css */
+.chatContainer {
+    width: 100%;
+    max-width: 600px;
+    height: 80vh;
+    margin: 0 auto;
+    background-color: #ffffff; /* White background for the chat container */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: background-color 0.3s ease;
+  }
+  
+  .chatHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the header text */
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 1.5rem;
+    position: relative; /* Allows absolute positioning for the back button */
+  }
+  
+  .backButton {
+    position: absolute;
+    left: 10px;          /* Move the button to the left side */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f1f1f1;
+    color: #007bff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .backButton:hover {
+    background-color: #007bff;
+    color: white;
+  }
+
+  .chatBox {
+    padding: 20px;
+    height: 70%;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .inputContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .chatInput {
+    width: 80%;
+    padding: 10px;
+    border-radius: 25px;
+    border: 2px solid #ccc;
+  }
+  
+  .sendButton {
+    width: 15%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .sendButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .chatInput:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Message bubbles */
+  .botBubble {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 75%;
+    align-self: flex-start;
+    word-wrap: break-word;
+  }
+  
+  .userBubble {
+    background-color: #e6e6e6;
+    color: #333;
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 75%;
+    align-self: flex-end;
+    word-wrap: break-word;
+  }
+  
+  
+  

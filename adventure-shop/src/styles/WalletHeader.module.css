@@ -1,0 +1,29 @@
+/* styles/WalletHeader.module.css */
+.walletContainer {
+    width: 100%;
+    background-color: #1a3c77; /* Deep blue background */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end; /* Move the wallet balance to the right side */
+    align-items: center;
+    position: fixed; /* Keep it fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it sits on top of other content */
+  }
+  
+  .walletInfo {
+    color: white; /* White text color for the wallet balance */
+    font-size: 1.5rem;
+    font-family: 'Lobster', sans-serif; /* Fun font for the text */
+  }
+  
+  .walletLabel {
+    font-weight: bold;
+  }
+  
+  .walletAmount {
+    font-size: 1.8rem;
+    margin-left: 10px;
+    font-weight: 600;
+  }
